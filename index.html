@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =========================
+       NAVBAR (Reusable Component)
+       Source: components/navbar.html
+  ========================== -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="#home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">YourName</span>
+      </a>
+
+      <div class="nav-links">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <a class="btn btn--primary" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="pill">Frontend Only • HTML + CSS</p>
+          <h1 class="hero__title">
+            Hi, I’m <span class="accent">Your Name</span><br />
+            <span class="muted">Frontend Developer</span>
+          </h1>
+          <p class="hero__subtitle">
+            I build clean, responsive websites using modern HTML & CSS.
+            This portfolio is a project for <b>CED 318 (Project Based Learning)</b>.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#about">About Me</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">3+</div>
+              <div class="stat__label">Sections</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">2–3</div>
+              <div class="stat__label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">100%</div>
+              <div class="stat__label">Responsive</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="profile">
+            <img class="profile__img" src="assets/avatar.svg" alt="Avatar" />
+            <div class="profile__meta">
+              <h3 class="profile__name">Your Name</h3>
+              <p class="profile__role">Frontend Developer</p>
+            </div>
+          </div>
+
+          <div class="profile__line"></div>
+
+          <div class="mini-list">
+            <div class="mini-item">
+              <span class="mini-dot"></span>
+              <span>Clean layout & typography</span>
+            </div>
+            <div class="mini-item">
+              <span class="mini-dot"></span>
+              <span>Reusable components</span>
+            </div>
+            <div class="mini-item">
+              <span class="mini-dot"></span>
+              <span>Mobile-first responsive design</span>
+            </div>
+          </div>
+
+          <a class="btn btn--primary btn--full" href="#contact">Let’s Work Together</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">
+            A short introduction about who you are and what you do.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3 class="card-title">Who am I?</h3>
+            <p class="card-text">
+              I’m a student and a future software developer. I enjoy building websites with
+              clean structure, consistent design, and responsive layouts. I’m learning how
+              to organize code and work in a team using GitHub.
+            </p>
+            <p class="card-text">
+              My goal is to become confident in frontend development and create real projects.
+            </p>
+          </div>
+
+          <div class="card card--soft">
+            <h3 class="card-title">Quick Info</h3>
+            <ul class="list">
+              <li><b>Location:</b> Erbil, Iraq</li>
+              <li><b>Study:</b> Computer Education</li>
+              <li><b>Focus:</b> Frontend (HTML/CSS)</li>
+              <li><b>Next:</b> JavaScript (bonus)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SKILLS SECTION
+    ========================== -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-desc">
+            These are the technologies I’m practicing. (Reusable “skill-badge” component)
+          </p>
+        </div>
+
+        <div class="skills-wrap">
+          <!-- Reusable Component: skill-badge (see components/skill-badge.html) -->
+          <span class="skill-badge">HTML</span>
+          <span class="skill-badge">CSS</span>
+          <span class="skill-badge">Responsive Design</span>
+          <span class="skill-badge">Git & GitHub</span>
+          <span class="skill-badge">UI/UX Basics</span>
+          <span class="skill-badge">Figma (Basics)</span>
+          <span class="skill-badge">Problem Solving</span>
+          <span class="skill-badge">Teamwork</span>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card-title">Skill Levels (Simple Bars)</h3>
+            <div class="bars">
+              <div class="bar">
+                <div class="bar__label">HTML</div>
+                <div class="bar__track"><div class="bar__fill w-90"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label">CSS</div>
+                <div class="bar__track"><div class="bar__fill w-80"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label">GitHub</div>
+                <div class="bar__track"><div class="bar__fill w-70"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label">UI Design</div>
+                <div class="bar__track"><div class="bar__fill w-60"></div></div>
+              </div>
+            </div>
+            <p class="hint">
+              *Bars are static (CSS only) — no JavaScript.
+            </p>
+          </div>
+
+          <div class="card card--soft">
+            <h3 class="card-title">What I’m Learning Next</h3>
+            <ul class="list">
+              <li>Flexbox & Grid (advanced)</li>
+              <li>Better component reuse</li>
+              <li>Animations with CSS</li>
+              <li>JavaScript (bonus)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PROJECTS SECTION
+    ========================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-desc">
+            At least 2–3 projects. These can be dummy projects. (Reusable “project-card” component)
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Reusable Component: project-card (see components/project-card.html) -->
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="tag">Frontend</span>
+              <span class="tag tag--soft">Responsive</span>
+            </div>
+            <h3 class="project-card__title">Portfolio Website</h3>
+            <p class="project-card__desc">
+              A personal portfolio with reusable components, clean layout, and responsive design.
+            </p>
+            <div class="project-card__meta">
+              <span class="meta-item">HTML</span>
+              <span class="meta-dot"></span>
+              <span class="meta-item">CSS</span>
+              <span class="meta-dot"></span>
+              <span class="meta-item">GitHub</span>
+            </div>
+            <div class="project-card__actions">
+              <a class="btn btn--ghost btn--sm" href="#contact">Contact</a>
+              <a class="btn btn--primary btn--sm" href="#contact">Live Link</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="tag">UI</span>
+              <span class="tag tag--soft">CSS</span>
+            </div>
+            <h3 class="project-card__title">Landing Page</h3>
+            <p class="project-card__desc">
+              A simple product landing page with sections, cards, and consistent styling.
+            </p>
+            <div class="project-card__meta">
+              <span class="meta-item">Flexbox</span>
+              <span class="meta-dot"></span>
+              <span class="meta-item">Grid</span>
+              <span class="meta-dot"></span>
+              <span class="meta-item">Typography</span>
+            </div>
+            <div class="project-card__actions">
+              <a class="btn btn--ghost btn--sm" href="#contact">Contact</a>
+              <a class="btn btn--primary btn--sm" href="#contact">Live Link</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="tag">Design</span>
+              <span class="tag tag--soft">Components</span>
+            </div>
+            <h3 class="project-card__title">Dashboard UI (Dummy)</h3>
+            <p class="project-card__desc">
+              A dashboard layout with cards, sections, and responsive grid — HTML/CSS only.
+            </p>
+            <div class="project-card__meta">
+              <span class="meta-item">Cards</span>
+              <span class="meta-dot"></span>
+              <span class="meta-item">Layout</span>
+              <span class="meta-dot"></span>
+              <span class="meta-item">Reuse</span>
+            </div>
+            <div class="project-card__actions">
+              <a class="btn btn--ghost btn--sm" href="#contact">Contact</a>
+              <a class="btn btn--primary btn--sm" href="#contact">Live Link</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="note card">
+          <h3 class="card-title">Component Reuse (For Presentation)</h3>
+          <p class="card-text">
+            In the presentation, explain that each project uses the same <b>.project-card</b>
+            structure and styling, and skills use the same <b>.skill-badge</b> component.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-desc">
+            Put your email and GitHub link (mandatory). Social links optional.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <h3 class="card-title">Let’s talk</h3>
+            <p class="card-text">
+              If you want to contact me, use the information below.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a class="contact-value" href="mailto:your.email@example.com">your.email@example.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">GitHub</span>
+                <a class="contact-value" href="https://github.com/your-username" target="_blank" rel="noreferrer">
+                  github.com/your-username
+                </a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">LinkedIn</span>
+                <a class="contact-value" href="#" target="_blank" rel="noreferrer">optional</a>
+              </div>
+            </div>
+
+            <div class="hint">
+              *No contact form (because that needs backend or JS validation).
+            </div>
+          </div>
+
+          <div class="card card--soft">
+            <h3 class="card-title">Presentation Checklist</h3>
+            <ul class="list">
+              <li>Show Hero + About + Skills + Projects + Contact</li>
+              <li>Resize screen (responsive)</li>
+              <li>Open GitHub repo structure</li>
+              <li>Explain reusable components</li>
+              <li>Each member speaks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER (Reusable Component)
+       Source: components/footer.html
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <p class="footer__text">
+        © <span>2025</span> Your Name • CED 318 Project Based Learning
+      </p>
+      <div class="footer__links">
+        <a href="#home">Top</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
